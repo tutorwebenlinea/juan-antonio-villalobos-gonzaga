@@ -1,0 +1,61 @@
+﻿Para esta actividad se describen las condiciones funcionales que se deberán realizar como requerimientos en el ANEXO A.
+
+ANEXO A.- REQUERIMIENTOS DE PROGRAMA
+
+
+Se elaborará un captcha que permitirá validar el formulario que solicite lo siguiente (Pantalla 1):
+Título de pantalla “Cobros/Depósitos de Pagos Ántrax S.A. de C.V.”
+Nombre: (Validado, solo caracteres cadena, en caso de escribir algún carácter numérico o
+símbolo, enviara el mensaje de “¡Dato Incorrecto…!”)
+Primer Apellido: (Validado, solo caracteres cadena, en caso de escribir algún carácter numérico
+o símbolo, enviara el mensaje de “¡Dato Incorrecto…!”)
+Segundo Apellido: (Validado, solo caracteres cadena, en caso de escribir algún carácter
+numérico o símbolo, enviara el mensaje de “¡Dato Incorrecto…!”)
+Sexo: (mostrará una lista para seleccionar “Masculino”, “Femenino”)
+Fecha de Nacimiento: (Validará solo a personas mayores de edad), para este caso si es menor de edad no permita pasar a la pantalla 2, enviando el mensaje: “Usted no puede realizar este tipo de trámite”) el formato deberá coincidir con dd/mm/aaaa.
+Estado: (mostrará una lista para seleccionar el estado, deberán agregar los estados que integran el país)
+Localidad/Municipio: (Validará, solo caracteres cadena, en caso de escribir algún carácter
+numérico o símbolo, enviará el mensaje de “¡Dato Incorrecto…!”)
+País: (por default pondrá México)
+Correo Electrónico: (Validará que la dirección escrita sea correspondiente a un correo electrónico(dominio))
+Confirmación del Correo Electrónico: (Validará que la dirección escrita sea correspondiente al correo electrónico escrito anteriormente).
+
+Se mostrarán los botones Aceptar y Cancelar, al pulsar aceptar se realizarán TODAS las validaciones anteriores enviando los mensajes correspondientes en caso de encontrar alguna inconsistencia, hasta que sean subsanadas o bien se cierre la ventana por el usuario, de lo contrario, si todo es correcto, se enviará un captcha como el siguiente (Pantalla 2):
+
+
+Pantalla 2.- Validación I´m not a robot
+Si pulsa cancelar, se cerrará la ventana automáticamente.
+Una vez al marcar el recuadro “I´m not a robot”, este nos mandará a la pantalla 3, donde solicitará
+los siguientes datos:
+Cuenta: (Número de 16 dígitos)
+Banco: (Desplegará una lista con los 12 bancos más reconocidos del país México (investigarlos)) Fecha de expiración: (Se mostrarán dos recuadros en formato lista, el primero validará el mes indicado del 01 al 12, y el segundo validará el año indicado del 2020 al 2025)
+CVU: (Validará un recuadro donde solo se permitan tres dígitos)
+Cantidad a transferir: (Validara solo cuatro números enteros y dos decimales)
+Confirmación de cantidad a transferir: (Validará que sea la cantidad igual a la escrita anteriormente.
+
+Si no se marca el recuadro “I´m not a robot” en 10 segundos, el formulario de la pantalla 1
+aparecerá nuevamente para su llenado.
+
+Se mostrarán los botones aceptar y cancelar, al pulsar aceptar se realizarán TODAS las validaciones anteriores enviando los mensajes correspondientes en caso de encontrar alguna inconsistencia, hasta que sean subsanadas o bien se cierre la ventana por el usuario, de lo contrario, si todo es correcto, se enviará un captcha como el siguiente (Pantalla 4):
+
+
+
+Pantalla 4.- Capcha
+
+
+Los caracteres deberán ser escritos tal cual la imagen que se muestre, deberá generarse aleatoriamente como mínimo 6 caracteres y máximo 8, combinados entre a-z, A-Z, y del 0 al 9.
+Solo aparecerá el botón de generar nueva cadena, el de sonido no es necesario ponerlo. Se agregarán los botones Aceptar y Cancelar para validar el dato escrito por el usuario.
+Si el captcha escrito es correcto, al dar Aceptar desplegara la pantalla 5, de lo contrario, regresara a la pantalla 4, mostrando un nuevo captcha para escribirlo.
+
+
+Pantalla 5.- Validación total de datos
+
+
+Si el usuario da clic en la opción Cancelar cerrara la pantalla completa.
+Si aparece la pantalla 5, esta durara solo 10 segundos y se cerrara, automáticamente.
+
+
+Nota: la evaluación estará en favor de la funcionalidad, sin embargo, se revisará el código para validar los métodos de búsqueda que se utilizaron, así como los algoritmos implementados, uso de SOLID (Es una metodología que se usa para programar), previa validación para emitir la calificación del mismo.
+
+
+

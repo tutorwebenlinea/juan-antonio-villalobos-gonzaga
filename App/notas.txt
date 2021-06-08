@@ -1,0 +1,160 @@
+Se elaborará un captcha que permitirá validar el formulario que solicite lo siguiente (Pantalla 1):
+Título de pantalla 
+		“Cobros/Depósitos de Pagos Ántrax S.A. de C.V.”
+
+
+Nombre:  
+		Validacio  no caraceres espaciales 
+		mensaje de “¡Dato Incorrecto…!”
+
+Primer Apellido: 
+
+		Validacio  no caraceres espaciales 
+		mensaje de “¡Dato Incorrecto"
+
+Segundo Apellido:
+		
+		Validacio  no caraceres espaciales 
+		mensaje de “¡Dato Incorrecto"
+
+Sexo: 
+		(mostrará una lista para seleccionar “Masculino”, “Femenino”)
+	  	<input type="radio">
+
+Fecha de Nacimiento: 
+
+		Validará solo a personas mayores de edad)
+		mensaje: “Usted no puede realizar este tipo de trámite”
+		formato deberá dd/mm/aaaa.
+
+Estado: 
+	mostrará una lista para seleccionar el estado, deberán agregar los estados que integran el país
+
+Localidad/Municipio: 
+	(Validará, solo caracteres cadena, en caso de escribir algún carácter
+	numérico o símbolo, enviará el mensaje de “¡Dato Incorrecto…!”
+
+		<label for="cars">Choose a car:</label>
+
+		<select name="cars" id="cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="mercedes">Mercedes</option>
+		<option value="audi">Audi</option>
+		</select> 
+
+
+País: por default pondrá México
+
+Correo Electrónico: 
+        Validará que la dirección escrita sea correspondiente a un correo electrónico(dominio
+        http://www.regular-expressions.info/email.html
+        https://www.w3schools.com/TAGS/att_input_pattern.asp
+
+Confirmación del Correo Electrónico: 
+        Validará que la dirección escrita sea correspondiente al correo electrónico escrito anteriormente.
+
+
+https://www.w3resource.com/javascript/form/email-validation.php
+
+
+
+botones Aceptar y Cancelar
+
+Se mostrarán los botones Aceptar y Cancelar, al pulsar aceptar se realizarán TODAS las validaciones anteriores enviando los mensajes correspondientes en caso de encontrar alguna inconsistencia, hasta que sean subsanadas o bien se cierre la ventana por el usuario, de lo contrario, si todo es correcto, se enviará un captcha como el siguiente 
+
+Servidor web de pruebas 
+https://app.infinityfree.net/login
+
+
+https://es.wikipedia.org/wiki/SOLID
+
+
+Pantalla 2.- Validación I´m not a robot
+            Si pulsa cancelar, se cerrará la ventana automáticamente. Una vez al marcar el recuadro “I´m not a robot”, este nos mandará a la 
+
+pantalla 3, donde solicitará
+los siguientes datos:
+
+Cuenta: 
+        (Número de 16 dígitos)
+Banco: 
+        (Desplegará una lista con los 12 bancos más reconocidos del país México (investigarlos)) 
+
+Fecha de expiración: 
+        (Se mostrarán dos recuadros en formato lista, el primero validará el mes indicado del 01 al 12, y el segundo validará el año indicado del 2020 al 2025)
+
+CVU: (Validará un recuadro donde solo se permitan tres dígitos)
+
+Cantidad a transferir: 
+        (Validara solo cuatro números enteros y dos decimales)
+
+Confirmación de cantidad a transferir: 
+        (Validará que sea la cantidad igual a la escrita anteriormente.
+
+
+
+Pantalla 4.- Capcha
+
+https://www.baulphp.com/numeros-y-letras-aleatorios-en-php-codigo/
+
+
+
+Pantalla 5.- Validación total de datos
+
+
+
+
+
+
+Aguascalientes
+
+
+
+
+001 	Aguascalientes 	 	
+007 	Rincón de Romos 	
+002 	Asientos 	
+008 	San José de Gracia 	
+003 	Calvillo 	
+009 	Tepezalá 	
+004 	Cosío 		
+010 	El Llano 	
+005 	Jesús María 		
+011 	San Francisco de los Romo 	
+006 	Pabellón de Arteaga 	
+
+
+
+
+    Baja California
+    Baja California Sur
+    Campeche
+    Chiapas
+    Chihuahua
+    Ciudad de México
+    Coahuila
+    Colima
+    Durango
+    Estado de México
+    Guanajuato
+    Guerrero
+    Hidalgo
+    Jalisco
+    Michoacán
+    Morelos
+    Nayarit
+    Nuevo León
+    Oaxaca
+    Puebla
+    Querétaro
+    Quintana Roo
+    San Luis Potosí
+    Sinaloa
+    Sonora
+    Tabasco
+    Tamaulipas
+    Tlaxcala
+    Veracruz
+    Yucatán
+    Zacatecas
